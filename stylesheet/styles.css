@@ -1,0 +1,512 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.head-bar{
+    display: flex;
+    /* gap: 75%;  */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px ;
+    background-color: #ffffff;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+
+
+}
+/* .navlinks {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+} */
+.navlinks a {
+    text-decoration: none;
+    padding: 5px 20px;
+    color: black; 
+}
+
+
+
+.navlinks a:hover{
+    background-color: gray;
+    /* border-radius: 5px; */
+    /* justify-items: center; */
+    transition: 0.5s;
+    color: white;
+    
+}
+
+.navimg{
+    width: 40.2px;
+    height: 40.2px;
+    float: right;
+    display: none;
+}
+
+
+.logo{
+    display: flex;
+    gap: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.letter{
+    border: 2px solid black;
+    padding: 2px;
+    background-color: black;
+    color: #FAF6E3;
+}
+.architects{
+    padding-top: 2px;
+    padding-right: 5px;
+    color: black;
+}
+.banner{
+    width: 100vw;
+    height: 700px;
+    position: relative;
+    /* border-bottom: 1px solid black; */
+    box-shadow: 0 2px 20px rgba(59, 59, 59, 0.3);
+}
+.bannerimg{
+    height: 100%;
+    width: 85%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto; 
+      
+
+}
+.bannertext{
+    position: absolute;
+    left: 43%;
+    bottom: 50%;
+    display: flex;
+    background-color: rgba(248, 247, 245, 0.5);
+    font-size: 30px;
+    padding: 20px;
+    color: black;
+}
+.architects2{
+    padding: 5px 10px;
+}
+.letter2{
+    border: 2px solid black;
+    padding: 6px;
+    background-color: black;
+    color: #FAF6E3;
+}
+.subheading{
+    font-size: 20px;
+    margin: 30px 60px;
+    height: 50px;
+    border-bottom: 0.02px solid gray;
+}
+
+/* .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    
+} */
+
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.house img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex: 1 1 calc(33.33% - 20px); */
+    width: 500px;
+    height: 350px;
+    object-fit: cover;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+
+.housename{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+   
+}
+
+.house:hover{
+    transform: scale(1.05);
+    
+   
+}
+.about-description, .Contact-description{
+    font-size: 15px;
+    padding:0 100px;
+    margin: 40px;
+    /* columns: 3;
+    column-gap: 25px; */
+}
+
+
+.employee1,.employee2,.employee3,.employee4{
+    margin-left: 100px;
+    width: 300px;
+    height: 400px;
+    border: none;
+    position: relative;
+    border-radius: 2px;
+}
+
+.employeeimg{
+    object-fit: cover;
+    /* overflow: hidden; */
+    width: 100%;
+    height: 100%;
+}
+.emp-details{
+    position: absolute;
+    bottom: 5%;
+    margin: 0 0 3%;
+    background-color: rgba(248, 247, 245, 0.5);
+    color: black;
+    padding: 10px;
+    padding-right: 0;
+    
+}
+.emp-descrition{
+    padding-top: 10px;
+    font-size: 14px;
+}
+.emp-details h5{
+    font-weight: normal;
+}
+
+
+.employee-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+
+.contact{
+    padding: 5px 30px;
+    margin-top: 10px ;
+    align-items:center;
+    font-size:15px;
+    /* margin-left: 25%; */
+    width: 100%;
+    height: 2.5em;
+    border-style: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+
+    
+}
+.contact:hover{
+    color: white;
+    background-color: gray;
+    border-style: none;
+}
+.Contact-info{
+    position: relative;
+
+}
+
+form{
+    margin: 0 150px;
+}
+
+.formelement{
+    margin:10px 0;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+}
+.formbutton{
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 16px;
+
+}
+.formbutton:hover{
+    color: black;
+    background-color: #D3D3D3;
+    
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+    color: white;
+    height: 100px;
+    text-align: center;
+}
+/* footer{
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+    color: white;
+    height: 100px;
+    text-align: center;
+    
+} */
+.footer-description{
+    margin-top: 20px;
+}
+.location{
+    object-fit: cover;
+    height: 800px;
+    width: 100%;
+    padding: 50px 100px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    
+    .head-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        align-content: center;
+        
+
+    }
+    
+    .navlinks.active{
+        margin-top: 20px;
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        transition: 0.5s;
+        
+    }
+
+    .navlinks a {
+        display: none;
+
+    }
+
+    .navlinks.active a {
+        display: flex;
+        align-items: flex-end;
+        background-color: white;
+        border-radius: 2px;
+        
+        
+    }
+
+
+    .navlinks a:hover{
+        border-radius: none;
+        background-color: gray;
+ 
+    }
+    
+    .navimg{
+        display: flex;
+        position: fixed;
+        right: 5%;
+        top: 2%;
+        cursor: pointer;
+    }
+
+    .projects {
+        flex-direction: column;
+    }
+
+    .house img{
+        width: 100%;
+        
+    }
+
+    .employee1,.employee2,.employee3,.employee4{
+        margin-left:0;
+        padding-top: 10px;
+        width: 300px;
+        height: 400px;
+        border: none;
+        position: relative;
+        border-radius: 2px;
+    }
+
+
+    .employee-card {
+        flex-direction: column;
+        margin: 0 10%;
+        gap: 10px;
+        width: 70%;
+    }
+
+    .bannertext {
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+    form{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .about-description {
+        font-size: 13px;
+        padding: 0 50px;
+    }
+    .Contact-description{
+        font-size: 13px;
+        padding: 0 50px;
+        width: 100%;
+        margin-left: 2px;
+    }
+
+    .location{
+        margin: 0 auto;
+        padding: 5px 20px;
+        width: 100%;
+        height: 400px;
+    }
+}
+
+
+
+@media screen and (max-width: 780px) {
+    
+    .head-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        align-content: center;
+        
+
+    }
+    
+    .navlinks.active{
+        margin-top: 20px;
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        transition: 0.5s;
+    }
+
+    .navlinks a {
+        display: none;
+
+    }
+
+    .navlinks.active a {
+        display: flex;
+        align-items: flex-end;
+        background-color: white;
+        border-radius: 2px;
+        
+    }
+
+
+    .navlinks a:hover{
+        border-radius: none;
+        background-color: gray;
+ 
+    }
+    
+    .navimg{
+        display: flex;
+        position: fixed;
+        right: 5%;
+        top: 2%;
+        cursor: pointer;
+    }
+
+    .projects {
+        flex-direction: column;
+    }
+
+    .house img{
+        width: 100%;
+        
+    }
+
+    .employee1,.employee2,.employee3,.employee4{
+        margin-left:0;
+        padding-top: 10px;
+        width: 300px;
+        height: 400px;
+        border: none;
+        position: relative;
+        border-radius: 2px;
+    }
+
+
+    .employee-card {
+        flex-direction: column;
+        margin: 0 10%;
+        gap: 10px;
+        width: 70%;
+    }
+
+    .bannertext {
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+    form{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .about-description {
+        font-size: 13px;
+        padding: 0 50px;
+    }
+    .Contact-description{
+        font-size: 13px;
+        padding: 0 50px;
+        width: 100%;
+        margin-left: 2px;
+    }
+
+    .location{
+        margin: 0 auto;
+        padding: 5px 20px;
+        width: 100%;
+        height: 400px;
+    }
+}
